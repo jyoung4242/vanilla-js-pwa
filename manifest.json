@@ -18,7 +18,7 @@
   "display": "standalone",
   "description": "Test PWA Description",
   "scope": "https://vanilla-js-pwa.vercel.app/",
-  "start_url": "./",
+  "start_url": ".",
   "dir": "auto",
   "lang": "en",
   "orientation": "portrait",

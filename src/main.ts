@@ -11,8 +11,8 @@ const model = {
 
 const template = `<div>
     <section class="main">
-        <h1>Recipe App v${version}</h1>
-        <p>The best culinary treats</p>
+        <h1>my PWA App </h1>
+        <p>v${version}</p>
         <button \${click @=> fetchGreeting}>Explore</button>
     </section>
 

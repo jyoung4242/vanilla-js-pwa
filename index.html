@@ -13,7 +13,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", async () => {
           console.log(`registering service worker`);
-          const rslt = await navigator.serviceWorker.register("./sw.js");
+          const rslt = await navigator.serviceWorker.register("/sw.js");
           console.log(rslt);
         });
       }

@@ -4,4 +4,4 @@ cp manifest.json ./public/assets/manifest.json
 cp ./src/assets/cog.png ./public/assets/cog.png
 cp ./src/style.css ./public/assets/style.cc
 cp offline.html ./public/assets/offline.html
-cp ./src/sw.js ./public/assets/sw.js
+cp ./src/sw.js ./public/sw.js

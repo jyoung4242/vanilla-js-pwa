@@ -15,10 +15,4 @@ const template = `<div>
 
 UI.create(document.body, model, template);
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js");
-  });
-}
-
 console.log(`Hello World`);

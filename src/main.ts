@@ -1,6 +1,8 @@
 import "./style.css";
 import { UI } from "@peasy-lib/peasy-ui";
 
+const version = "1.0.0";
+
 const model = {
   fetchGreeting: () => {
     rpcFetchGreeting();
@@ -9,7 +11,7 @@ const model = {
 
 const template = `<div>
     <section class="main">
-        <h1>Recipe App</h1>
+        <h1>Recipe App v${version}</h1>
         <p>The best culinary treats</p>
         <button \${click @=> fetchGreeting}>Explore</button>
     </section>

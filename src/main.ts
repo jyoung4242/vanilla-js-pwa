@@ -1,18 +1,35 @@
 import "./style.css";
 import { UI } from "@peasy-lib/peasy-ui";
-import { Assets } from "@peasy-lib/peasy-assets";
-import { Input } from "@peasy-lib/peasy-input";
-const model = {};
+
+const model = {
+  fetchGreeting: () => {
+    rpcFetchGreeting();
+  },
+};
 
 const template = `<div>
     <section class="main">
         <h1>Recipe App</h1>
         <p>The best culinary treats</p>
-        <button>Explore</button>
+        <button \${click @=> fetchGreeting}>Explore</button>
     </section>
 
 </div>`;
 
 UI.create(document.body, model, template);
 
-console.log(`Hello World`);
+const serverIP = "192.168.68.66";
+const serverPort = 3000;
+
+async function rpcFetchGreeting() {
+  try {
+    const response = await fetch(`http://${serverIP}:${serverPort}/`);
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status}`);
+    }
+    const data = await response.text();
+    console.log("Response from server:", data);
+  } catch (error) {
+    console.error("Error connecting to server:", error);
+  }
+}

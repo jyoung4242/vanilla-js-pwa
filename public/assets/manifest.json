@@ -21,5 +21,13 @@
   "dir": "auto",
   "lang": "en",
   "orientation": "portrait",
-  "id": "MyTestPWA"
+  "id": "MyTestPWA",
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ]
 }

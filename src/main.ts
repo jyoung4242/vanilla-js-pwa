@@ -28,8 +28,8 @@ async function rpcFetchGreeting() {
       throw new Error(`Server error: ${response.status}`);
     }
     const data = await response.text();
-    window.alert(`Response from server:, ${data}`);
+    window.alert(`Response from server: ${data}`);
   } catch (error) {
-    console.error("Error connecting to server:", error);
+    window.alert(`Error connecting to server: ${error}`);
   }
 }

@@ -6,3 +6,4 @@ cp ./src/style.css ./public/assets/style.cc
 cp offline.html ./public/offline.html
 cp ./src/sw.js ./public/sw.js
 cp ./screenshot.png ./public/assets/screenshot.png
+cp ./index.html ./public/index.html

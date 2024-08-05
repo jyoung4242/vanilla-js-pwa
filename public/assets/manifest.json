@@ -17,7 +17,8 @@
   "background_color": "#000000",
   "display": "standalone",
   "description": "Test PWA Description",
-  "start_url": "./index.html",
+  "scope": "https://vanilla-js-pwa.vercel.app/",
+  "start_url": "./",
   "dir": "auto",
   "lang": "en",
   "orientation": "portrait",
@@ -29,5 +30,6 @@
       "type": "image/png",
       "platform": "wide"
     }
-  ]
+  ],
+  "display_override": ["window-controls-overlay", "standalone", "browser"]
 }

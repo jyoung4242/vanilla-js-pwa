@@ -3,7 +3,7 @@ import { UI } from "@peasy-lib/peasy-ui";
 import axios from "axios";
 import https from "https";
 
-const version = "1.0.5";
+const version = "1.0.6";
 
 const httpsAgent = new https.Agent({
   rejectUnauthorized: false, // Disable for self-signed certificates (not recommended for production)

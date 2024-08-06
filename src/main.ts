@@ -25,7 +25,7 @@ const serverPort = 3000;
 
 async function rpcFetchGreeting() {
   try {
-    const response = await fetch(`https://${serverIP}:${serverPort}`, { method: "GET" });
+    const response = await fetch(`https://${serverIP}:${serverPort}/`, { method: "GET" });
     console.log(response);
 
     if (!response.ok) {

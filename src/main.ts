@@ -1,7 +1,7 @@
 import "./style.css";
 import { UI } from "@peasy-lib/peasy-ui";
 
-const version = "1.0.1";
+const version = "1.0.2";
 
 const model = {
   fetchGreeting: () => {
@@ -25,8 +25,7 @@ const serverPort = 3000;
 
 async function rpcFetchGreeting() {
   try {
-    window.alert(`Connecting to server... http://${serverIP}:${serverPort} `);
-    const response = await fetch(`http://${serverIP}:${serverPort}`, { method: "GET" });
+    const response = await fetch(`https://${serverIP}:${serverPort}`, { method: "GET" });
     if (!response.ok) {
       throw new Error(`Server error: ${response.status}`);
     }

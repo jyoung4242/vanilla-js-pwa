@@ -1,7 +1,7 @@
 import "./style.css";
 import { UI } from "@peasy-lib/peasy-ui";
 
-const version = "1.0.4";
+const version = "1.0.5";
 
 const model = {
   fetchGreeting: () => {

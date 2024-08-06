@@ -20,7 +20,7 @@ const template = `<div>
 
 UI.create(document.body, model, template);
 
-const serverIP = "localhost";
+const serverIP = "104.52.13.147";
 const serverPort = 3000;
 
 async function rpcFetchGreeting() {
